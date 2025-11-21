@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TULUXUR 2025 Creative Guide</title>
+    <!-- Chosen Palette: Sand & Gold (Exact Hex Codes from Brief) -->
+    <!-- Application Structure Plan:
+         1. Summary: New Brand Vision (Body, Mind, Soul).
+         2. Visual Identity: Interactive palette with specific hexes (#E3D8CA, #C9B79C) and Typography showcase.
+         3. Benchmarking Matrix: A grid layout summarizing the competitive landscape lessons (Aman, One&Only, etc.).
+         4. Wireframes (EXPANDED):
+            - Home: The vertical journey.
+            - Experiences: Detailed masonry layout with partner integration.
+            - Real Estate: Catalog view with ROI and Investment calculators.
+            - Soul: Minimalist, "sacred" layout with retreat scheduling.
+            - Concierge: Membership tier view.
+         5. Sitemap: Hierarchical view of the new navigation structure.
+    -->
+    <!-- Visualization & Content Choices:
+        - Palette: Updated to Sand Beige/Soft Gold/Charcoal Black.
+        - Benchmarking: Used a clean, card-based grid.
+        - Wireframes: significantly increased fidelity using Tailwind grid/flex to show layout logic (e.g., sidebar filters vs top filters, masonry grids for images).
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Colors based on 2025 Guide */
+        :root {
+            --color-sand: #E3D8CA;
+            --color-gold: #C9B79C;
+            --color-white: #F8F7F4;
+            --color-black: #1E1E1E;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-black);
+        }
+        h1, h2, h3, h4, h5, h6, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-light-body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        .bg-sand { background-color: var(--color-sand); }
+        .bg-gold { background-color: var(--color-gold); }
+        .bg-warm-white { background-color: var(--color-white); }
+        .bg-charcoal { background-color: var(--color-black); }
+        .text-gold { color: var(--color-gold); }
+        .text-charcoal { color: var(--color-black); }
+        
+        .section-fade {
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        /* Wireframe specific styles */
+        .wf-placeholder-img {
+            background-color: #E5E5E5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9CA3AF;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body class="bg-warm-white text-charcoal">
+
+    <!-- Navigation -->
+    <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-[#E3D8CA]">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 bg-black flex items-center justify-center text-[#C9B79C] font-serif font-bold text-xl">T</div>
+                    <h1 class="text-2xl font-serif font-bold tracking-widest text-charcoal">TULUXUR</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#vision" class="text-sm font-medium hover:text-[#C9B79C] transition-colors">Vision</a>
+                        <a href="#identity" class="text-sm font-medium hover:text-[#C9B79C] transition-colors">Identity</a>
+                        <a href="#benchmarking" class="text-sm font-medium hover:text-[#C9B79C] transition-colors">Benchmarks</a>
+                        <a href="#wireframes" class="text-sm font-medium hover:text-[#C9B79C] transition-colors">Detailed Wireframes</a>
+                        <a href="#structure" class="text-sm font-medium hover:text-[#C9B79C] transition-colors">Structure</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <!-- Section 1: Brand Vision -->
+        <section id="vision" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-serif text-charcoal mb-4">Luxury with Purpose</h2>
+                <p class="text-xl font-light-body text-gray-600 max-w-2xl mx-auto">
+                    "Luxury that inspires. Experiences that transform. Investments that last."
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Pillar 1 -->
+                <div class="p-8 bg-[#E3D8CA]/30 border border-[#E3D8CA] rounded-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <h3 class="text-2xl font-serif mb-2">BODY</h3>
+                    <p class="font-bold text-xs tracking-widest text-[#C9B79C] mb-4">EXPERIENCES</p>
+                    <p class="font-light-body text-sm">Luxury experiences, pleasure, adventure. <br><em>"Live extraordinary moments."</em></p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="p-8 bg-[#E3D8CA]/30 border border-[#E3D8CA] rounded-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🏙️</div>
+                    <h3 class="text-2xl font-serif mb-2">MIND</h3>
+                    <p class="font-bold text-xs tracking-widest text-[#C9B79C] mb-4">REAL ESTATE</p>
+                    <p class="font-light-body text-sm">Investments & financial expansion. <br><em>"Invest in experiences that grow in value."</em></p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="p-8 bg-[#E3D8CA]/30 border border-[#E3D8CA] rounded-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🧘</div>
+                    <h3 class="text-2xl font-serif mb-2">SOUL</h3>
+                    <p class="font-bold text-xs tracking-widest text-[#C9B79C] mb-4">PURPOSE</p>
+                    <p class="font-light-body text-sm">Personal growth & empowerment. <br><em>"Find balance through success."</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Visual Identity -->
+        <section id="identity" class="mb-20">
+            <h2 class="text-4xl font-serif mb-8 border-b border-[#E3D8CA] pb-4">Visual Identity 2025</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Color Palette -->
+                <div class="bg-white p-8 border border-gray-100 shadow-sm">
+                    <h3 class="text-xl font-serif mb-6">Palette: "Midnight in Dubai"</h3>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="h-24 bg-[#E3D8CA] flex items-end p-2 text-xs font-bold text-[#1E1E1E]">SAND BEIGE<br>#E3D8CA</div>
+                        <div class="h-24 bg-[#C9B79C] flex items-end p-2 text-xs font-bold text-[#1E1E1E]">SOFT GOLD<br>#C9B79C</div>
+                        <div class="h-24 bg-[#F8F7F4] flex items-end p-2 text-xs font-bold border border-gray-200 text-[#1E1E1E]">WARM WHITE<br>#F8F7F4</div>
+                        <div class="h-24 bg-[#1E1E1E] flex items-end p-2 text-xs font-bold text-[#E3D8CA]">CHARCOAL<br>#1E1E1E</div>
+                    </div>
+                    <p class="text-sm font-light-body text-gray-500">
+                        Mood: Calm, exclusive, cinematic. Textures of linen, sand, and marble.
+                    </p>
+                </div>
+
+                <!-- Typography -->
+                <div class="bg-white p-8 border border-gray-100 shadow-sm">
+                    <h3 class="text-xl font-serif mb-6">Typography System</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-xs text-gray-400 mb-1">TITLES (Playfair Display)</p>
+                            <h4 class="text-4xl font-serif text-[#1E1E1E]">The Art of Living</h4>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 mb-1">BODY (Montserrat Light)</p>
+                            <p class="font-light-body text-lg text-gray-600 leading-relaxed">
+                                TuLuxur redefines modern luxury—connecting experiences that inspire, investments that elevate, and relationships that transcend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Benchmarking -->
+        <section id="benchmarking" class="mb-20">
+            <h2 class="text-4xl font-serif mb-8 border-b border-[#E3D8CA] pb-4">Competitive Landscape Lessons</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Aman -->
+                <div class="p-6 bg-white border-l-4 border-[#C9B79C] shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Aman Resorts</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-serif italic">"Sacred Minimalism"</p>
+                    <p class="text-sm font-light-body">Lesson: Apply silence, space, and monochrome elegance to the <strong>Soul Experience</strong> page.</p>
+                </div>
+                <!-- One&Only -->
+                <div class="p-6 bg-white border-l-4 border-[#C9B79C] shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">One&Only</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-serif italic">"Destination as Character"</p>
+                    <p class="text-sm font-light-body">Lesson: Make Dubai itself a character through architecture, sea, and desert visuals.</p>
+                </div>
+                <!-- Six Senses -->
+                <div class="p-6 bg-white border-l-4 border-[#C9B79C] shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Six Senses</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-serif italic">"Emotional Narrative"</p>
+                    <p class="text-sm font-light-body">Lesson: Design every user journey as an emotional narrative, not just a transaction.</p>
+                </div>
+                <!-- Omniyat -->
+                <div class="p-6 bg-white border-l-4 border-[#C9B79C] shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Omniyat</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-serif italic">"Art-Driven Real Estate"</p>
+                    <p class="text-sm font-light-body">Lesson: Bring design storytelling to properties. Architecture as emotion.</p>
+                </div>
+                <!-- Quintessentially -->
+                <div class="p-6 bg-white border-l-4 border-[#C9B79C] shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">Quintessentially</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-serif italic">"Elite Human Access"</p>
+                    <p class="text-sm font-light-body">Lesson: Concierge services must convey human warmth, precision, and elite access.</p>
+                </div>
+                <!-- The Way -->
+                <div class="p-6 bg-white border-l-4 border-[#C9B79C] shadow-sm">
+                    <h4 class="font-bold text-lg mb-2">The Way Dubai</h4>
+                    <p class="text-sm text-gray-500 mb-2 font-serif italic">"Modern UX"</p>
+                    <p class="text-sm font-light-body">Lesson: Keep the interface light, intuitive, and editorial. Avoid clutter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Wireframes -->
+        <section id="wireframes" class="mb-20">
+            <h2 class="text-4xl font-serif mb-8 border-b border-[#E3D8CA] pb-4">Detailed Wireframe Mockups</h2>
+            <p class="text-sm text-gray-500 mb-6">Click the tabs below to view the detailed structural plan for each key section of the website.</p>
+            
+            <!-- Tabs -->
+            <div class="flex flex-wrap gap-4 mb-6 border-b border-gray-200">
+                <button onclick="switchTab('wf-home', this)" class="wf-tab-btn pb-2 text-sm font-medium border-b-2 border-[#C9B79C] text-[#1E1E1E] focus:outline-none">Homepage</button>
+                <button onclick="switchTab('wf-exp', this)" class="wf-tab-btn pb-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-[#C9B79C] focus:outline-none">Experiences (Body)</button>
+                <button onclick="switchTab('wf-re', this)" class="wf-tab-btn pb-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-[#C9B79C] focus:outline-none">Real Estate (Mind)</button>
+                <button onclick="switchTab('wf-soul', this)" class="wf-tab-btn pb-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-[#C9B79C] focus:outline-none">Soul (Purpose)</button>
+                <button onclick="switchTab('wf-concierge', this)" class="wf-tab-btn pb-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-[#C9B79C] focus:outline-none">Concierge</button>
+            </div>
+
+            <!-- WF Container -->
+            <div class="bg-[#F2F2F2] p-8 rounded border border-gray-300 relative min-h-[800px]">
+                
+                <!-- HOME WIREFRAME (UPDATED) -->
+                <div id="wf-home" class="wf-content max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden">
+                    <div class="h-8 bg-gray-100 border-b flex items-center px-4 space-x-2">
+                        <div class="w-2 h-2 rounded-full bg-red-400"></div><div class="w-2 h-2 rounded-full bg-yellow-400"></div><div class="w-2 h-2 rounded-full bg-green-400"></div>
+                    </div>
+                    <!-- Nav -->
+                    <div class="h-16 border-b flex justify-between items-center px-8 bg-white/90 sticky top-0 z-10">
+                        <div class="font-serif font-bold tracking-widest text-[#C9B79C]">TULUXUR</div>
+                        <div class="text-[10px] uppercase tracking-wider space-x-4 text-gray-500">
+                            <span>Experiences</span><span>Properties</span><span>Concierge</span><span>Soul</span>
+                        </div>
+                    </div>
+                    <!-- Hero -->
+                    <div class="h-[500px] bg-gray-800 relative flex items-center justify-center text-center">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <span class="absolute top-4 right-4 text-white/50 text-xs border border-white/30 px-2 py-1">[VIDEO: Slow pan of Dubai Marina at Sunset]</span>
+                        <div class="relative z-10 text-white p-8 max-w-lg">
+                            <h2 class="font-serif text-4xl mb-4">LUXURY THAT INSPIRES</h2>
+                            <div class="h-px w-20 bg-[#C9B79C] mx-auto mb-4"></div>
+                            <p class="font-light text-sm mb-8 tracking-wide">Experiences that transform. Investments that last.</p>
+                            <div class="flex justify-center gap-4">
+                                <div class="px-6 py-3 bg-[#C9B79C] text-black text-xs font-bold uppercase tracking-wider">Explore Body</div>
+                                <div class="px-6 py-3 border border-white text-white text-xs font-bold uppercase tracking-wider">Explore Mind</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 1: Body -->
+                    <div class="grid grid-cols-2 h-80">
+                        <div class="bg-[#E3D8CA]/20 p-12 flex flex-col justify-center items-start">
+                            <span class="text-[#C9B79C] text-xs font-bold tracking-widest mb-2">01. THE BODY</span>
+                            <h3 class="font-serif text-3xl mb-4 text-[#1E1E1E]">Curated Experiences</h3>
+                            <p class="text-xs text-gray-600 mb-6 leading-relaxed w-3/4">From supercars to private yachts, we design moments that become memories.</p>
+                            <span class="text-xs border-b border-[#1E1E1E] pb-1 cursor-pointer">View Collection</span>
+                        </div>
+                        <div class="wf-placeholder-img text-white bg-gray-400">[Img: Yacht Deck]</div>
+                    </div>
+                    <!-- Section 2: Mind -->
+                    <div class="grid grid-cols-2 h-80">
+                        <div class="wf-placeholder-img text-white bg-gray-500">[Img: Omniyat Penthouse Interior]</div>
+                        <div class="bg-white p-12 flex flex-col justify-center items-start">
+                            <span class="text-[#C9B79C] text-xs font-bold tracking-widest mb-2">02. THE MIND</span>
+                            <h3 class="font-serif text-3xl mb-4 text-[#1E1E1E]">Legacy Investments</h3>
+                            <p class="text-xs text-gray-600 mb-6 leading-relaxed w-3/4">High-yield real estate assets in Dubai's most prestigious districts.</p>
+                            <span class="text-xs border-b border-[#1E1E1E] pb-1 cursor-pointer">View Properties</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCES WIREFRAME (DETAILED) -->
+                <div id="wf-exp" class="wf-content max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden hidden">
+                     <div class="h-8 bg-gray-100 border-b flex items-center px-4 space-x-2">
+                        <div class="w-2 h-2 rounded-full bg-red-400"></div><div class="w-2 h-2 rounded-full bg-yellow-400"></div><div class="w-2 h-2 rounded-full bg-green-400"></div>
+                    </div>
+                    <!-- Header -->
+                    <div class="h-64 bg-gray-900 relative flex flex-col justify-center items-center text-white p-8">
+                         <span class="text-[#C9B79C] text-xs font-bold tracking-widest mb-4">THE BODY</span>
+                         <h2 class="font-serif text-4xl mb-2">Live Extraordinary Moments</h2>
+                         <div class="flex gap-4 mt-6 text-xs tracking-wider opacity-80">
+                             <span class="border-b border-transparent hover:border-white cursor-pointer">YACHTS</span>
+                             <span class="border-b border-transparent hover:border-white cursor-pointer">CARS</span>
+                             <span class="border-b border-transparent hover:border-white cursor-pointer">DINING</span>
+                             <span class="border-b border-transparent hover:border-white cursor-pointer">SAFARI</span>
+                         </div>
+                    </div>
+                    <!-- Masonry / Grid Layout -->
+                    <div class="grid grid-cols-3 gap-1 p-1 bg-white">
+                        <!-- Featured Large Item -->
+                        <div class="col-span-2 row-span-2 h-96 bg-gray-200 relative group overflow-hidden">
+                            <div class="absolute inset-0 bg-gray-300 wf-placeholder-img text-gray-500 group-hover:scale-105 transition-transform duration-700">[Img: 75ft Majesty Yacht]</div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                                <h3 class="font-serif text-2xl">Private Yacht Charters</h3>
+                                <p class="text-[10px] mt-1 text-[#C9B79C]">PARTNER: SEVEN YACHTS</p>
+                            </div>
+                        </div>
+                        <!-- Side Item 1 -->
+                        <div class="h-48 bg-gray-100 relative">
+                             <div class="absolute inset-0 wf-placeholder-img">[Img: Ferrari F8]</div>
+                             <div class="absolute bottom-0 left-0 p-4 w-full bg-white/90">
+                                 <h4 class="font-serif text-sm">Supercar Fleet</h4>
+                                 <p class="text-[9px] text-gray-500">PARTNER: PADDOCK</p>
+                             </div>
+                        </div>
+                        <!-- Side Item 2 -->
+                        <div class="h-48 bg-gray-100 relative">
+                             <div class="absolute inset-0 wf-placeholder-img">[Img: Platinum Heritage Safari]</div>
+                             <div class="absolute bottom-0 left-0 p-4 w-full bg-white/90">
+                                 <h4 class="font-serif text-sm">Desert Conservation</h4>
+                                 <p class="text-[9px] text-gray-500">LUXURY SAFARI</p>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- Detailed Package Block -->
+                    <div class="p-8 bg-[#F8F7F4]">
+                        <h3 class="font-serif text-xl mb-6 text-center">Curated Packages</h3>
+                        <div class="flex gap-4 overflow-x-auto pb-4">
+                            <!-- Card 1 -->
+                            <div class="min-w-[250px] bg-white border border-gray-100 shadow-sm p-4">
+                                <div class="h-32 bg-gray-200 mb-4 wf-placeholder-img text-xs">[Img: Dinner Table]</div>
+                                <h4 class="font-serif text-md mb-1">Sunset & Dine</h4>
+                                <p class="text-xs text-gray-500 mb-3">Chauffeur + Yacht + Zuma Dinner</p>
+                                <button class="w-full py-2 border border-[#C9B79C] text-[#C9B79C] text-[10px] font-bold uppercase hover:bg-[#C9B79C] hover:text-white">Inquire</button>
+                            </div>
+                             <!-- Card 2 -->
+                             <div class="min-w-[250px] bg-white border border-gray-100 shadow-sm p-4">
+                                <div class="h-32 bg-gray-200 mb-4 wf-placeholder-img text-xs">[Img: Skydive]</div>
+                                <h4 class="font-serif text-md mb-1">Adrenaline Rush</h4>
+                                <p class="text-xs text-gray-500 mb-3">Skydive Dubai + Video + Transfer</p>
+                                <button class="w-full py-2 border border-[#C9B79C] text-[#C9B79C] text-[10px] font-bold uppercase hover:bg-[#C9B79C] hover:text-white">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REAL ESTATE WIREFRAME (DETAILED) -->
+                <div id="wf-re" class="wf-content max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden hidden">
+                    <div class="h-8 bg-gray-100 border-b flex items-center px-4 space-x-2">
+                        <div class="w-2 h-2 rounded-full bg-red-400"></div><div class="w-2 h-2 rounded-full bg-yellow-400"></div><div class="w-2 h-2 rounded-full bg-green-400"></div>
+                    </div>
+                    <!-- Filter Bar (Sticky) -->
+                    <div class="h-14 border-b bg-white sticky top-0 flex items-center px-6 justify-between text-xs text-gray-600 z-10">
+                        <div class="flex space-x-4">
+                            <span class="cursor-pointer hover:text-black">All Locations ▼</span>
+                            <span class="cursor-pointer hover:text-black">Property Type ▼</span>
+                            <span class="cursor-pointer hover:text-black">Price Range ▼</span>
+                        </div>
+                        <div class="flex space-x-4 font-medium text-black">
+                            <span class="border-b-2 border-black pb-4">CATALOG</span>
+                            <span class="opacity-40 pb-4">MAP VIEW</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <!-- Sidebar: Filters/Promo -->
+                        <div class="w-64 border-r border-gray-100 p-6 hidden md:block bg-[#F8F7F4]">
+                            <h4 class="font-serif text-lg mb-4">Investment Focus</h4>
+                            <div class="space-y-3 text-xs">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" checked class="accent-[#C9B79C]"> <span>Off-Plan (High ROI)</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="accent-[#C9B79C]"> <span>Ready to Move</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="accent-[#C9B79C]"> <span>Waterfront</span>
+                                </label>
+                            </div>
+                            
+                            <div class="mt-8 p-4 bg-white border border-[#E3D8CA] rounded-sm">
+                                <h5 class="font-serif text-md mb-2">ROI Calculator</h5>
+                                <div class="h-1 bg-gray-200 mb-2 rounded overflow-hidden"><div class="w-3/4 h-full bg-[#C9B79C]"></div></div>
+                                <p class="text-[10px] text-gray-500">Est. Yield: <strong>8.5%</strong></p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid -->
+                        <div class="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Property Card 1 -->
+                            <div class="group cursor-pointer">
+                                <div class="h-56 bg-gray-300 relative mb-3 overflow-hidden">
+                                    <span class="absolute top-2 left-2 bg-black text-white text-[9px] px-2 py-1 tracking-widest uppercase">New Launch</span>
+                                    <div class="wf-placeholder-img h-full w-full group-hover:scale-105 transition-transform duration-500">[Img: Omniyat Ava]</div>
+                                </div>
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-serif text-lg leading-tight group-hover:text-[#C9B79C] transition-colors">Palm Jumeirah Signature</h3>
+                                        <p class="text-xs text-gray-500 mt-1">Omniyat • 5 Bed • 7,000 sqft</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-sm">POA</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 border-t border-gray-100 pt-2 flex justify-between text-[10px] text-gray-400 uppercase tracking-wider">
+                                    <span>Handover: Q4 2026</span>
+                                    <span class="text-[#C9B79C]">Download Brochure</span>
+                                </div>
+                            </div>
+                             <!-- Property Card 2 -->
+                             <div class="group cursor-pointer">
+                                <div class="h-56 bg-gray-300 relative mb-3 overflow-hidden">
+                                    <div class="wf-placeholder-img h-full w-full group-hover:scale-105 transition-transform duration-500">[Img: Ellington Ocean House]</div>
+                                </div>
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-serif text-lg leading-tight group-hover:text-[#C9B79C] transition-colors">Ocean House</h3>
+                                        <p class="text-xs text-gray-500 mt-1">Ellington • 4 Bed • Palm Jumeirah</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-sm">AED 25M</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 border-t border-gray-100 pt-2 flex justify-between text-[10px] text-gray-400 uppercase tracking-wider">
+                                    <span>Ready</span>
+                                    <span class="text-[#C9B79C]">View Floorplan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOUL WIREFRAME (NEW) -->
+                <div id="wf-soul" class="wf-content max-w-4xl mx-auto bg-[#F8F7F4] shadow-2xl overflow-hidden hidden">
+                     <div class="h-8 bg-[#F0EFEC] border-b border-[#E3D8CA] flex items-center px-4 space-x-2">
+                        <div class="w-2 h-2 rounded-full bg-red-400"></div><div class="w-2 h-2 rounded-full bg-yellow-400"></div><div class="w-2 h-2 rounded-full bg-green-400"></div>
+                    </div>
+                    <!-- Minimalist Header -->
+                    <div class="p-20 text-center">
+                        <span class="text-[#C9B79C] text-xs font-bold tracking-widest mb-4 block">THE SOUL</span>
+                        <h2 class="font-serif text-5xl text-[#1E1E1E] mb-6">Find Balance Through Success</h2>
+                        <div class="w-12 h-px bg-[#1E1E1E] mx-auto mb-6"></div>
+                        <p class="font-light-body text-sm text-gray-500 max-w-md mx-auto leading-loose">
+                            "For those who seek more than luxury. Join our curated retreats, private dinners, and leadership circles designed for personal expansion."
+                        </p>
+                    </div>
+                    
+                    <!-- Asymmetrical Layout -->
+                    <div class="flex flex-col md:flex-row h-[500px]">
+                        <div class="md:w-1/2 bg-white p-12 flex flex-col justify-center border-r border-[#E3D8CA]/30">
+                            <h3 class="font-serif text-2xl mb-8">Upcoming Gatherings</h3>
+                            
+                            <div class="space-y-8">
+                                <div class="flex group cursor-pointer">
+                                    <div class="w-12 text-xs font-bold text-[#C9B79C] pt-1">NOV<br>12</div>
+                                    <div>
+                                        <h4 class="font-serif text-lg group-hover:text-[#C9B79C] transition-colors">The Founders Dinner</h4>
+                                        <p class="text-xs text-gray-500 mt-1">Private Villa, Palm Jumeirah • Invitation Only</p>
+                                    </div>
+                                </div>
+                                <div class="flex group cursor-pointer">
+                                    <div class="w-12 text-xs font-bold text-[#C9B79C] pt-1">DEC<br>05</div>
+                                    <div>
+                                        <h4 class="font-serif text-lg group-hover:text-[#C9B79C] transition-colors">Desert Mindset Retreat</h4>
+                                        <p class="text-xs text-gray-500 mt-1">Al Maha Resort • Weekend Immersion</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="mt-12 text-left text-xs font-bold tracking-widest uppercase border-b border-black pb-2 w-max hover:text-[#C9B79C] hover:border-[#C9B79C]">Request Invitation</button>
+                        </div>
+                        <div class="md:w-1/2 bg-[#E5E5E5] wf-placeholder-img text-gray-400 text-sm tracking-widest">
+                            [Img: Minimalist Table Setting / Abstract Desert Art]
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONCIERGE WIREFRAME (NEW) -->
+                <div id="wf-concierge" class="wf-content max-w-4xl mx-auto bg-white shadow-2xl overflow-hidden hidden">
+                     <div class="h-8 bg-gray-100 border-b flex items-center px-4 space-x-2">
+                        <div class="w-2 h-2 rounded-full bg-red-400"></div><div class="w-2 h-2 rounded-full bg-yellow-400"></div><div class="w-2 h-2 rounded-full bg-green-400"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 h-full min-h-[600px]">
+                        <div class="bg-black text-[#F8F7F4] p-12 flex flex-col justify-center">
+                            <div class="w-16 h-16 border border-[#C9B79C] rounded-full flex items-center justify-center mb-8 text-[#C9B79C] font-serif italic text-2xl">T</div>
+                            <h2 class="font-serif text-4xl mb-6">TuLuxur<br><span class="text-[#C9B79C]">Members Circle</span></h2>
+                            <p class="font-light-body text-sm text-gray-400 mb-8 leading-relaxed">
+                                Unlocking the impossible. From sold-out events to last-minute jet charters, our members enjoy seamless access to the extraordinary.
+                            </p>
+                            <ul class="space-y-4 text-xs tracking-wider mb-12">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-[#C9B79C] rounded-full mr-3"></span>24/7 WHATSAPP CONCIERGE</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-[#C9B79C] rounded-full mr-3"></span>PRIORITY RESERVATIONS</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-[#C9B79C] rounded-full mr-3"></span>GLOBAL PARTNER NETWORK</li>
+                            </ul>
+                            <button class="bg-[#C9B79C] text-black px-8 py-3 text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors">Apply for Membership</button>
+                        </div>
+                        <div class="bg-gray-200 wf-placeholder-img text-gray-500">
+                            [Img: Hands holding champagne / Concierge handing key]
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 5: Sitemap -->
+        <section id="structure" class="mb-20">
+            <h2 class="text-4xl font-serif mb-8 border-b border-[#E3D8CA] pb-4">New Site Architecture</h2>
+            <div class="flex flex-col items-center">
+                
+                <!-- Home -->
+                <div class="p-4 bg-[#1E1E1E] text-[#C9B79C] font-serif border border-[#C9B79C] w-64 text-center rounded-sm">
+                    HOME: TULUXUR
+                </div>
+                <div class="h-8 w-px bg-gray-300"></div>
+                
+                <!-- Branches -->
+                <div class="w-full max-w-4xl flex justify-between relative">
+                    <div class="absolute top-0 left-1/4 right-1/4 h-px bg-gray-300"></div>
+                    
+                    <!-- Experiences -->
+                    <div class="flex flex-col items-center w-1/3">
+                        <div class="h-4 w-px bg-gray-300"></div>
+                        <div class="p-3 bg-white border border-gray-200 w-full text-center shadow-sm">
+                            <span class="font-bold text-xs tracking-widest text-[#C9B79C] block mb-1">BODY</span>
+                            EXPERIENCES
+                        </div>
+                        <div class="mt-4 space-y-2 w-full px-4 text-xs font-light-body">
+                            <div class="p-2 bg-gray-50 rounded-sm">Yachts (Seven Yachts)</div>
+                            <div class="p-2 bg-gray-50 rounded-sm">Supercars (Paddock)</div>
+                            <div class="p-2 bg-gray-50 rounded-sm">Safaris (Platinum)</div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate -->
+                    <div class="flex flex-col items-center w-1/3">
+                        <div class="h-4 w-px bg-gray-300"></div>
+                        <div class="p-3 bg-white border border-gray-200 w-full text-center shadow-sm">
+                            <span class="font-bold text-xs tracking-widest text-[#C9B79C] block mb-1">MIND</span>
+                            REAL ESTATE
+                        </div>
+                        <div class="mt-4 space-y-2 w-full px-4 text-xs font-light-body">
+                            <div class="p-2 bg-gray-50 rounded-sm">Villas & Penthouses</div>
+                            <div class="p-2 bg-gray-50 rounded-sm">Off-Plan Developments</div>
+                            <div class="p-2 bg-gray-50 rounded-sm">ROI Analysis</div>
+                        </div>
+                    </div>
+
+                    <!-- Soul / Concierge -->
+                    <div class="flex flex-col items-center w-1/3">
+                        <div class="h-4 w-px bg-gray-300"></div>
+                        <div class="p-3 bg-white border border-gray-200 w-full text-center shadow-sm">
+                            <span class="font-bold text-xs tracking-widest text-[#C9B79C] block mb-1">SOUL</span>
+                            PURPOSE & MEMBERSHIP
+                        </div>
+                        <div class="mt-4 space-y-2 w-full px-4 text-xs font-light-body">
+                            <div class="p-2 bg-gray-50 rounded-sm">Personal Growth</div>
+                            <div class="p-2 bg-gray-50 rounded-sm">Members Circle (24/7)</div>
+                            <div class="p-2 bg-gray-50 rounded-sm">Private Events</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#1E1E1E] text-[#F8F7F4] py-12">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <div class="font-serif text-2xl tracking-widest mb-4">TULUXUR</div>
+                <p class="font-light-body text-sm text-gray-400 mb-8">
+                    Dubai, UAE
+                </p>
+                <div class="inline-block border border-[#C9B79C] p-6 rounded-sm">
+                    <p class="text-xs text-[#C9B79C] uppercase tracking-widest mb-2">Implementation Contact</p>
+                    <p class="font-serif text-lg">Paula Alza</p>
+                    <p class="font-light-body text-sm mt-1">paulaalza@tuluxur.com</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        function switchTab(tabId, btnElement) {
+            // Hide all contents
+            document.querySelectorAll('.wf-content').forEach(el => el.classList.add('hidden'));
+            // Show target
+            document.getElementById(tabId).classList.remove('hidden');
+            
+            // Update Tab Styles
+            document.querySelectorAll('.wf-tab-btn').forEach(btn => {
+                btn.classList.remove('border-[#C9B79C]', 'text-[#1E1E1E]');
+                btn.classList.add('border-transparent', 'text-gray-500');
+            });
+            
+            if(btnElement) {
+                btnElement.classList.remove('border-transparent', 'text-gray-500');
+                btnElement.classList.add('border-[#C9B79C]', 'text-[#1E1E1E]');
+            }
+        }
+    </script>
+</body>
+</html>
